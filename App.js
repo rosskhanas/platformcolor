@@ -8,6 +8,7 @@
 
 import React from 'react';
 import {
+  PlatformColor,
   SafeAreaView,
   StyleSheet,
   ScrollView,
@@ -28,7 +29,7 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      <SafeAreaView style={{flex: 1}}>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
@@ -86,6 +87,7 @@ const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
+    backgroundColor: PlatformColor('?attr/colorOnBackground'),
   },
   sectionTitle: {
     fontSize: 24,
